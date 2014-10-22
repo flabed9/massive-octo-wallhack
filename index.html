@@ -1,1 +1,55 @@
-Hello World
+<html>
+<head>
+<title>Teste</title>
+<style type="text/css">
+.navbar{
+width: 100%; 
+float: left;
+background-color: #310E8F; 
+min-width: 500px;
+}
+
+.navbar li{
+list-style: none;
+float: left;  
+padding: 10 10 10 10;
+}
+
+.navbar ul{
+margin: 0 0 0 -40; 
+}
+
+.navbar a{
+text-decoration: none; 
+color: white;
+}
+
+.navbar a:hover{
+color: #ADFF2F;  
+}
+
+.Pesquisa{
+color: white;
+padding: 10 10 10 10;
+float: right;
+}
+</style> 
+  
+</head>
+<body>
+
+  <div class="navbar">
+    <ul>
+      <li><a href="https://www.google.com.br">Arquivos</a></li>
+      <li><a href="https://www.google.com.br">Editar</a></li>
+      <li><a href="https://www.google.com.br">Exibir</a></li>
+      <li><a href="https://www.google.com.br">Histórico</a></li>
+      <form action="/" method="get" style="display:inline;">
+      <div class="Pesquisa">
+       <input name="Pesquisa" type="text" value="Pesquisar" OnClick="if (this.value == 'Pesquisar'){this.value = '';}" OnBlur="if (this.value == ''){this.value = 'Pesquisar';}"/>
+        <input type="submit" value="Ok"/></div></form>
+    </ul>
+  </div>
+
+</body>
+</html>
